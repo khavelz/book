@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <p>wm lw seg emalg</p>
+        <button id="btn">Dica</button>
+
+        <input type="text" id="resposta">
+
+        <button onclick="check()">Enviar</button>
+
+
+
+    </body>
+
+    <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click', function(){
+            alert('lembre do dia em que nos conhecemos')
+        })
+
+        function check(){
+         var resposta = document.getElementById('resposta').value
+         var gabarito = 'eu te amo muito';
+
+         if (resposta===gabarito){
+            window.location.href = 'fase3.html'
+            
+         }
+
+         else{
+            alert('eroooou');
+         }
+
+       }
+
+
+
+    </script>
+</html>

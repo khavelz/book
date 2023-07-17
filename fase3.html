@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <p>
+            -.-. --- -- --- / . ..- / -- . / ... .. -. - --- / .- --- / ... . ..- / .-.. .- -.. ---
+        </p>
+        
+        <input type="text" id="resposta">
+      
+      <button id="btn" onclick="check()">Enviar</button>
+
+    </body>
+
+    <script>
+        function check(){
+         var resposta = document.getElementById('resposta').value
+         var gabarito = 'feliz';
+
+         if (resposta===gabarito){
+            window.location.href = 'fase4.html'
+            
+         }
+
+         else{
+            alert('eroooou');
+         }
+
+       }
+    </script>
+</html>

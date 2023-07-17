@@ -1,0 +1,31 @@
+<body>
+    <p>
+        15 15-17-21 22-15-3-5 5-19-20-1 6-1-26-5-14-4-15 8-15-10-5
+    </p>
+
+    <input type="text" id="resposta">
+    <button onclick="check()">Enviar</button>
+
+    <button onclick="dica()">Dica</button>
+
+</body>
+
+<script>
+
+    function check(){
+        var resposta = document.getElementById('resposta').value
+        var gabarito = 'aniversario'
+
+        if(resposta===gabarito){
+            window.location.href = 'fase5.html';
+        }
+
+        else{
+            alert('eroooooou');
+        }
+
+    }
+     function dica(){
+        alert('A=1 B=2 C=3');
+     }
+</script>

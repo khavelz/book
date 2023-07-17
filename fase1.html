@@ -1,0 +1,48 @@
+<html>
+   <body>
+      <p>
+         01110001 01110101 01100001 01101100 00100000 11101001 00100000 01101111 00100000 01101110 01101111 01101101 01100101 00100000 01100100 01101111 00100000 01100001 01101101 01101111 01110010 00100000 01100100 01100001 00100000 01101101 01101001 01101110 01101000 01100001 00100000 01110110 01101001 01100100 01100001 00111111 
+      </p>
+      <input type="text" id="resposta">
+      
+      <button id="btn" onclick="check()">Enviar</button>
+   
+      <button id="dica" onclick="dica()">Dica</button>
+   
+   </body>
+
+   <style>
+      ]#btn{
+         width: 100px;
+         height: 50px;
+
+      }
+   </style>
+
+   <script>
+       var resposta = document.getElementById('resposta')
+       var respota = resposta.value
+       var btn = document.getElementById('btn')
+
+       function check(){
+         var resposta = document.getElementById('resposta').value
+         var gabarito = 'ayme';
+
+         if (resposta===gabarito){
+            window.location.href = 'fase2.html'
+            
+         }
+
+         else{
+            alert('eroooou');
+         }
+
+       }
+
+       function dica(){
+         alert('')
+       }
+       
+    </script>
+
+</html>
